@@ -19,6 +19,11 @@ void ShowSubtitle(char *text)
 }  
 ```
 
+```
+// For some reason the BeginTextCommandPrint() is not working in Lua, to use these function you need Citizer.InvokeNative()
+//e.g Citizen.InvokeNative(0xB87A37EEB7FAA67D, "STRING")
+```
+
 ## Parameters
 * **GxtEntry**: 
 
