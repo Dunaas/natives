@@ -10,6 +10,11 @@ void END_TEXT_COMMAND_PRINT(int duration, BOOL drawImmediately);
 ```
 
 ```
+//For some reason the EndTextCommandPrint() is not working on Lua, to use these function you need Citizen.InvokeNative()
+//e.g Citizen.InvokeNative(0x9D77056A530643F6, 5000, true)
+```
+
+```
 Draws the subtitle at middle center of the screen.  
 int duration = time in milliseconds to show text on screen before disappearing  
 drawImmediately = If true, the text will be drawn immediately, if false, the text will be drawn after the previous subtitle has finished  
